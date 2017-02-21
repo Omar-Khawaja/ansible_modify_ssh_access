@@ -8,6 +8,6 @@
 
   roles:
 #if you are only removing or only adding access for users, feel free to comment
-out either of the roles below as appropriate
+#out either of the roles below as appropriate
     - add_users
     - remove_users
