@@ -1,0 +1,6 @@
+---
+# vars file for remove_users
+
+users:
+  - name: ahopkins
+    key: "{{ lookup('file', '/home/ansible/ahopkins.pub') }}"

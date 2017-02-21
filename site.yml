@@ -1,0 +1,9 @@
+---
+
+- name: modify ssh access
+  hosts: nodes
+  remote_user: root
+
+  roles:
+    - add_users
+    - remove_users

@@ -1,0 +1,9 @@
+---
+# tasks file for add_users
+
+- name: add .pub keys
+  authorized_key:
+    user: '{{ item.name }}'
+    state: present
+    key: "{{ item.key }}"
+  with_items: '{{ users }}'

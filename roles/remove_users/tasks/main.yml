@@ -1,0 +1,9 @@
+---
+# tasks file for remove_users
+
+- name: remove .pub keys
+  authorized_key:
+    user: '{{ item.name }}'
+    state: absent
+    key: "{{ item.key }}"
+  with_items: '{{ users }}'

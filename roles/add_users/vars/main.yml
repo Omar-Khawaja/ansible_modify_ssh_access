@@ -1,0 +1,7 @@
+---
+# vars file for add_users
+
+users:
+  - name: dsmith
+    key: "{{ lookup('file', '/home/ansible/dsmith.pub') }}"
+
