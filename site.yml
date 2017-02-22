@@ -1,13 +1,13 @@
 ---
 
 - name: modify ssh access
-#You can change the hosts below to 'all' or another group as specified in your
-#/etc/ansible/hosts file
+# You can change the hosts below to 'all' or another group as specified in your
+# /etc/ansible/hosts file
   hosts: nodes
   remote_user: root
 
   roles:
-#if you are only removing or only adding access for users, feel free to comment
-#out either of the roles below as appropriate
+# if you are only removing or only adding access for users, feel free to comment
+# out either of the roles below as appropriate
     - add_users
     - remove_users
